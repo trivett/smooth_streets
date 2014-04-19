@@ -17,10 +17,12 @@
           <%= f.text_field :latitude, id: 'hidden_lat' %>
           <%= f.text_field :longitude, id: 'hidden_long' %>
           </div>
-          <%= f.submit %>
+          <%= f.submit 'Save Pothole', class: 'pure-button pure-button-active' %>
       <% end %>
-      <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
+
   </section>
+
+<!--<input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">-->
 
   <div id="newMap"></div>
 
