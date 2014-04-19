@@ -1,6 +1,5 @@
 class Pothole < ActiveRecord::Base
   belongs_to :community
-  after_create :send_email
 
   #validates :unique_key, presence: true
   #validates :zipcode, presence: true
@@ -10,6 +9,11 @@ class Pothole < ActiveRecord::Base
 
   def send_email
     BoardMailer.email_community_board(self).deliver
+  end
+
+  def self.get_zipcode(latitude, longitude)
+    Geocoder.search("#{latitude},#{longitude}").first.data['address_components'].last['long_name']
+    binding.pry
   end
 
 end
