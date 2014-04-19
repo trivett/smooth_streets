@@ -12,6 +12,7 @@ class Pothole < ActiveRecord::Base
   end
 
   def self.get_zipcode(latitude, longitude)
+    binding.pry
     Geocoder.search("#{latitude},#{longitude}").first.data['address_components'].last['long_name']
     binding.pry
   end
