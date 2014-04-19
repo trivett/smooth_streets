@@ -10,7 +10,7 @@ class PotholesController < ApplicationController
 
   def create
     @pothole = Pothole.create pothole_params
-    redirect_to potholes_path
+    redirect_to root_path
   end
 
   private
