@@ -145,6 +145,7 @@ DEPENDENCIES
   devise
   jbuilder (~> 1.2)
   jquery-rails
+  json
   paperclip (~> 4.1)
   pg
   pry
