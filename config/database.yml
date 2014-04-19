@@ -1,0 +1,16 @@
+development: &defaults
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+  username: <%= `echo $USER`.chomp %>
+  password:
+  database: <%= File.basename(Rails.root) %>_development
+
+test:
+  <<: *defaults
+  database: <%= File.basename(Rails.root) %>_test
+
+production:
+  <<: *defaults
+  database: <%= File.basename(Rails.root) %>_production
