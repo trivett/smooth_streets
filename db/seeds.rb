@@ -11,20 +11,10 @@ require 'csv'
 data = File.read('lib/tasks/CB6.csv')
 potholes = CSV.parse(data)
 
-x = Pothole.create
 
 potholes.each do |pothole|
-  x.unique_key = pothole[0]
-  x.created_at_date = pothole[1]
-  x.zipcode = pothole[2]
-  x.address = pothole[3]
-  x.latitude = pothole[4]
-  x.longitude = pothole[5]
-
-
+  a = Pothole.create(unique_key: pothole[1], created_at_date: pothole[2], zipcode: pothole[3], address: "#{pothole[4]}", latitude: pothole[5], longitude: pothole[6])
 end
-
-
 #0 : "Unique.Key",
 #1 : "Created.Date",
 #2 : "Incident.Zip",

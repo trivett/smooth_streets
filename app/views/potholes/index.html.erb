@@ -1,0 +1,27 @@
+<h1>Index for Potholes</h1>
+
+<%= link_to 'New Pothole', new_potholes_url %>
+
+  <div id="location">
+    Your location will go here:
+  </div>
+  <div id="distance">
+
+  </div>
+
+  <section class='map_container'>
+      <div id="map">
+      </div>
+    <div id='hidden_form'>
+      <%= form_for :pothole do |f| %>
+          <%= f.text_field :latitude, id: 'hidden_lat' %>
+          <%= f.text_field :longitude, id: 'hidden_long' %>
+          </div>
+          <%= f.submit %>
+      <% end %>
+      <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
+  </section>
+
+<%#= @potholes.each do |x| %>
+<%#= x.zipcode %>
+<%# end %>

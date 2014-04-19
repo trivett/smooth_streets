@@ -1,5 +1,5 @@
 class CommBoardMailer < ActionMailer::Base
-  default from: "smoothestreets@gmail.com'
+  default from: "smoothestreets@gmail.com"
 
   def email_community_board
     @comm_board = 'jay.kaye31@gmail.com'
@@ -7,6 +7,5 @@ class CommBoardMailer < ActionMailer::Base
     mail(to: @comm_board, subject: 'Pot Hole Suckas')
   end
 end
-
 
 

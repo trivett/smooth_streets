@@ -5,6 +5,7 @@ gem 'rails', '4.0.4'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
+gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
@@ -49,8 +50,9 @@ gem 'rest-client'
 gem 'devise'
 gem 'json'
 gem 'crack'
+gem 'geocoder'
+
 group :development do
-  gem 'better_errors'
   gem 'pry'
   gem 'pry-rails'
 end
