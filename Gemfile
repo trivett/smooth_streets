@@ -45,6 +45,8 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'paperclip', '~> 4.1'
+gem 'rest-client'
+gem 'devise'
 
 group :development do
   gem 'better_errors'
