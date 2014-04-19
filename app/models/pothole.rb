@@ -19,6 +19,10 @@ class Pothole < ActiveRecord::Base
     Geocoder.search("#{latitude},#{longitude}").first.data['address_components'].last['long_name']
   end
 
+  def self.get_address(latitude, longitude)
+    Geocoder.search("#{latitude},#{longitude}").first.data['formatted_address']
+  end
+
   def make_call
     account_sid = 'AC7a2a4f9289a9fba84189773e05ffe2b7'
     auth_token = 'e1710047d73c3dce955e56d2734793a5'

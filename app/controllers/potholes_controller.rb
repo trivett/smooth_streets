@@ -12,7 +12,8 @@
     @pothole = Pothole.create pothole_params
     flash[:notice] = "Thank you for adding the pothole. Your local representatives have been notified."
     zipcode = Pothole.get_zipcode(@pothole.latitude, @pothole.longitude)
-    @pothole.update(zipcode: zipcode)
+    address = Pothole.get_address(@pothole.latitude, @pothole.longitude)
+    @pothole.update(zipcode: zipcode, address: address)
     @pothole.send_email
     redirect_to root_path
   end
