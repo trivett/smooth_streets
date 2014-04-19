@@ -48,7 +48,7 @@ gem 'paperclip', '~> 4.1'
 gem 'rest-client'
 gem 'devise'
 gem 'json'
-
+gem 'crack'
 group :development do
   gem 'better_errors'
   gem 'pry'
