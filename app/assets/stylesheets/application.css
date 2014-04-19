@@ -11,3 +11,10 @@
  *= require_self
  *= require_tree .
  */
+
+
+header h1 {
+    text-align: center;
+    font-family: 'Open Sans Condensed';
+    font-size: 38px;
+}
