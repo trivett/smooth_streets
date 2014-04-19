@@ -5,6 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
 require 'csv'
 
 data = File.read('lib/tasks/CB6.csv')
@@ -20,6 +21,7 @@ potholes.each do |pothole|
   x.latitude = pothole[4]
   x.longitude = pothole[5]
 
+
 end
 
 
@@ -29,3 +31,4 @@ end
 #3 : "Incident.Address",
 #4 : "Latitude",
 #5 : "Longitude"
+
