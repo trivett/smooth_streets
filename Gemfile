@@ -51,6 +51,7 @@ gem 'devise'
 gem 'json'
 gem 'crack'
 gem 'geocoder'
+gem 'twilio-ruby'
 
 group :development do
   gem 'pry'
