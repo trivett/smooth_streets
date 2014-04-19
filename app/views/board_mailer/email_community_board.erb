@@ -7,9 +7,9 @@
     <h1>Dear Members of Community Board 6, </h1>
     <p>My name is name. I'm e-mailing you to report a pothole that needs to be fixed.
         It's a hazard to the community. Here is the information on the pothole:</p>
-        <li><%= @pothole.address %></li>
-        <li><%= @pothole.community_board %></li>
-        <li><%= @pothole.zipcode %></li>
+        <li>Community Board: <%= @pothole.community_board %></li>
+        <li>Location: <%= @pothole.address %></li>
+        <li>Zip Code: <%= @pothole.zipcode %></li>
     <p>Thank you</p>
   </body>
 </html>
