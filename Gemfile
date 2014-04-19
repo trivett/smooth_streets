@@ -43,4 +43,9 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-gem "better-errors"
+
+group :development do
+  gem 'better_errors'
+  gem 'pry'
+  gem 'pry-rails'
+end
