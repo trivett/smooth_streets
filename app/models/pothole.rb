@@ -6,6 +6,9 @@ class Pothole < ActiveRecord::Base
   validates :latitude, presence: true
   validates :longitude, presence: true
 
- parsed = Crack::JSON.parse()
+  #data = File.read('lib/tasks/CB6.csv')
+  #CSV.parse(data)
+
+
 
 end
