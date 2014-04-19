@@ -10,12 +10,6 @@ var potholes = [];
   potholes.push({latitude: <%= p.latitude %>, longitude: <%= p.longitude %>, address: "<%= "#{p.address}" %>", zipcode: <%= p.zipcode %>});
 <% end %>
 
-
-
-
-
-
-
 function getMyLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(displayLocation, handleError);
