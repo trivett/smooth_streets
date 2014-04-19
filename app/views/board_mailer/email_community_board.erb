@@ -6,12 +6,12 @@
   <body>
     <h1>Dear Members of Community Board 6, </h1>
     <p>My name is name. I'm e-mailing you to report a pothole that needs to be fixed.
-        It's a hazard to the community. The pothole is located at pothole.location. 
-        Here is an image of the pothole: 
-          pothole.img.</p>
-    <p>The pothole is located at pothole.location</p>
-    </p>
-    <p>Thanks you,</p>
-    <p>User name</p>
+        It's a hazard to the community. Here is the information on the pothole:</p>
+        <li><%= @pothole.address %></li>
+        <li><%= @pothole.community_board %></li>
+        <li><%= @pothole.zipcode %></li>
+    <p>Thank you</p>
   </body>
 </html>
+
+

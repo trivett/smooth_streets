@@ -1,4 +1,4 @@
-<%= form_for :pothole do |f| %>
+<%= form_for :pothole, url: potholes_path do |f| %>
     <%= f.label :zipcode %>
     <%= f.text_field :zipcode %>
     <%= f.label :address %>
