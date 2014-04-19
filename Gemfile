@@ -5,7 +5,6 @@ gem 'rails', '4.0.4'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
-gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
@@ -56,4 +55,9 @@ gem 'twilio-ruby'
 group :development do
   gem 'pry'
   gem 'pry-rails'
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
 end
