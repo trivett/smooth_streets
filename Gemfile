@@ -51,9 +51,10 @@ gem 'devise'
 gem 'json'
 gem 'crack'
 gem 'geocoder'
+gem 'gon'
 
 group :development do
   gem 'pry'
   gem 'pry-rails'
 end
-gem 'gon'
+
