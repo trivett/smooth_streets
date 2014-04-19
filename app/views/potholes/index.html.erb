@@ -13,7 +13,7 @@
       <div id="map">
       </div>
     <div id='hidden_form'>
-      <%= form_for :pothole do |f| %>
+      <%= form_for :pothole, url: new_potholes_path do |f| %>
           <%= f.text_field :latitude, id: 'hidden_lat' %>
           <%= f.text_field :longitude, id: 'hidden_long' %>
           </div>
