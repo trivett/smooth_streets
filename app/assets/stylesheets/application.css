@@ -11,17 +11,28 @@
  *= require_self
  *= require_tree .
  */
-
+@import url(http://fonts.googleapis.com/css?family=Fauna+One);
 
 body {
   background-image: url("bg.png");
   background-repeat: no-repeat;
-
+  font-family: 'Fauna One', serif;
 }
 
 header h1 {
     text-align: center;
-    font-family: 'Open Sans Condensed';
+    font-family: 'Fauna One', serif;
     font-size: 38px;
+}
+
+#wut a {
+  font-family: 'Fauna One', Courier, serif;
+  text-decoration: none;
+  font-size: 36px;
+  float: right;
+  color: #4a4a4a;
+  font-weight: bold;
+  padding: 20px;
+
 }
 

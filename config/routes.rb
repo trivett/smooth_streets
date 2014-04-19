@@ -1,7 +1,8 @@
 SmoothStreets::Application.routes.draw do
   devise_for :users
   root to: 'potholes#index'
-  resource :potholes, only: [:index, :show, :new, :create, :show]
+  resource :potholes, only: [:index, :show, :new, :create, :show, :about]
+  get "/about", to: "potholes#about"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

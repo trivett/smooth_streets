@@ -109,15 +109,13 @@ function handleError(error){
 }
 
 </script>
-<%= link_to 'New Pothole', new_potholes_url %>
 
-  <div id="location">
-    Your location will go here:
-  </div>
-  <div id="distance">
 
-  </div>
 
+  <header>
+
+  <p id="wut"><%= link_to "What is this?", "/about" %></p>
+  </header>
   <section class='map_container'>
       <div id="map">
       </div>
@@ -126,7 +124,7 @@ function handleError(error){
           <%= f.text_field :latitude, id: 'hidden_lat' %>
           <%= f.text_field :longitude, id: 'hidden_long' %>
           </div>
-          <%= f.submit 'Save Pothole', class: 'pure-button pure-button-active' %>
+          <%= f.submit 'Report bad road conditions', class: 'pure-button pure-button-active' %>
       <% end %>
 
   </section>

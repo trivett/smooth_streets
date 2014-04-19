@@ -111,8 +111,8 @@
 //     }
 
 
-    document.getElementById("location").innerHTML = errorMessage;
-}
+//     document.getElementById("location").innerHTML = errorMessage;
+// }
 
 
 
