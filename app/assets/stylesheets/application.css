@@ -13,8 +13,15 @@
  */
 
 
+body {
+  background-image: url("bg.png");
+  background-repeat: no-repeat;
+
+}
+
 header h1 {
     text-align: center;
     font-family: 'Open Sans Condensed';
     font-size: 38px;
 }
+
