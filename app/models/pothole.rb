@@ -6,8 +6,8 @@ class Pothole < ActiveRecord::Base
   validates :latitude, presence: true
   validates :longitude, presence: true
 
-  #data = File.read('lib/tasks/CB6.csv')
-  #CSV.parse(data)
+  data = File.read('lib/tasks/CB6.csv')
+  CSV.parse(data)
 
 
 
