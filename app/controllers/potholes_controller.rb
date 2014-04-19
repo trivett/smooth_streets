@@ -10,6 +10,7 @@ class PotholesController < ApplicationController
 
   def create
     @pothole = Pothole.create pothole_params
+    flash[:notice] = "Thank you for adding the pothole. Your local representatives have been notified."
     redirect_to root_path
   end
 

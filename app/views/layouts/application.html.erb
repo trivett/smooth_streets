@@ -16,6 +16,9 @@
   <h1>Smooth Streets</h1>
 </header>
 
+<% if flash[:notice] %>
+  <div class='notice'><strong><%= flash[:notice] %></strong></div>
+  <% end %>
 <%= yield %>
 
 </body>
