@@ -28,7 +28,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
+  # bundle exec rake doc:rails generates the API u¬nder doc/api.
   gem 'sdoc', require: false
 end
 
@@ -43,6 +43,9 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+
+gem 'paperclip', '~> 4.1'
 
 group :development do
   gem 'better_errors'
