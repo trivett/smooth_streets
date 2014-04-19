@@ -59,7 +59,9 @@ function showMap(pos){
     addMarker(map, googleLoc, title, content);
     for(var i = 0; i < potholes.length; i++){
 
-        var contentString = "FUKKEN CONTENT!!" ;
+        var add = potholes[i].address;
+
+        var contentString = "address: " + add;
 
         var potholeLoc = new google.maps.LatLng(potholes[i].latitude * 1, potholes[i].longitude * 1);
         console.log(potholeLoc);
