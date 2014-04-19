@@ -1,21 +1,7 @@
 
 <script>
 
-
-    <% @potholes.each do |p| %>
-      $('#newMap').gMap('addMarker',
-        {
-          latitude: <%= p.latitude %>,
-          longitude: <%= p.longitude %>,
-          content: "CONTENT",
-
-          // iconsize: [32, 37],
-          //  iconanchor: [12, 46]
-            }
-
-        }
-  );
-    <% end %>
+  var things = <%= @potholes %>;
 
 
 
