@@ -1,3 +1,5 @@
+<%= render "mapscript" %>
+
 <h1>Index for Potholes</h1>
 
 <%= link_to 'New Pothole', new_potholes_url %>
@@ -21,6 +23,13 @@
       <% end %>
       <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
   </section>
+
+  <div id="newMap"></div>
+
+
+
+
+
 
 <%#= @potholes.each do |x| %>
 <%#= x.zipcode %>
