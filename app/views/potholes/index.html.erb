@@ -24,7 +24,7 @@ function displayLocation(position){
     var accuracy = position.coords.accuracy;
     var div = document.getElementById("location");
 
-    div.innerHTML = "You're at Longitude: " + longitude + " Latitude " + latitude;
+   // div.innerHTML = "You're at Longitude: " + longitude + " Latitude " + latitude;
     //div.innerHTML += " (with accuracy: " + accuracy +" meters)";
 
   // Put lat and long in hidden v
@@ -106,10 +106,7 @@ function handleError(error){
 
 
 
-  <header>
 
-  <p id="wut"><%= link_to "What is this?", "/about" %></p>
-  </header>
   <section class='map_container'>
       <div id="map">
       </div>
@@ -122,8 +119,6 @@ function handleError(error){
       <% end %>
 
   </section>
-
-<!--<input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">-->
 
   <div id="newMap"></div>
 

@@ -23,6 +23,7 @@ header h1 {
     text-align: center;
     font-family: 'Fauna One', serif;
     font-size: 38px;
+    display: inline;
 }
 
 #wut a {
@@ -33,6 +34,7 @@ header h1 {
   color: #4a4a4a;
   font-weight: bold;
   padding: 20px;
+  margin-top: 5px;
 
 }
 
