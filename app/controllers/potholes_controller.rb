@@ -1,7 +1,7 @@
   class PotholesController < ApplicationController
 
   def index
-      @potholes = Pothole.all
+      @potholes = Pothole.where.not(latitude: nil)
   end
 
   def new
