@@ -17,6 +17,7 @@ body {
   background-image: url("bg.png");
   background-repeat: no-repeat;
   font-family: 'Fauna One', serif;
+
 }
 
 header h1 {
@@ -38,9 +39,21 @@ header h1 {
 
 }
 
-#spiel{
+#spiel, .memorial{
   margin:50px;
-  margin-left: 350px;
+  margin-left: 600px;
   width: 400px;
 }
 
+#spiel p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.memorial {
+ width: 800px; 
+ margin-left: 300px;
+}
+.memorial img {
+  max-width: 800px;
+}
